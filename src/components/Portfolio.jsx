@@ -1,10 +1,9 @@
-import React from 'react';
 import project1 from "../assets/project1.png"
 import project2 from "../assets/project2.png"
 import project4 from "../assets/project4.png"
 import project5 from "../assets/project5.png"
 import project6 from "../assets/project6.png"
-import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai'
+import {  AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
 
 const projects = [
@@ -60,8 +59,8 @@ const Portfolio = () => {
     <div className='max-w-[1000px] mx-auto p-6 md:my-20' id="portfolio">
         <h2 className='text-3xl font-bold text-gray-200 mb-8'>Portfolio</h2>
         {projects.map((project, index) => (
-            <Reveal>
-            <div key={index} 
+            <Reveal key={index}>
+            <div key={index}
             className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} mb-12`}>
                 <div className='w-full md:w-1/2 p-4'>
                     <img

@@ -1,4 +1,3 @@
-import React from 'react'
 
 const ShinyEffect = ({left, right, top, size = 500}) => {
 
